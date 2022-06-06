@@ -19,7 +19,7 @@ btnSubmit.addEventListener("click", function (e) {
     main.classList.remove("component");
     main.classList.add("thank-you-state");
     // create content for the "thank you" state
-    const html = `<header><img src="../images/illustration-thank-you.svg" /></header>
+    const html = `<header><img src="images/illustration-thank-you.svg" /></header>
           <div class="user-rating"> You selected ${currentRating.value} out of 5</div>
           <div class="thank-you-content">
             <h1>Thank you!</h1>
