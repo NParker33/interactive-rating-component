@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  /* custom colors */
+  --cc-primary: hsl(25, 97%, 53%);
+  --cc-light-grey: hsl(217, 12%, 63%);
+  --cc-med-grey: hsl(216, 12%, 54%);
+  --cc-dk-blue: hsl(213, 19%, 18%);
+  --cc-very-dk-blue: hsl(216, 12%, 8%);
+
+  /* font styles */
+  --ff-primary: "Overpass", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+/* reset default settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-primary);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--cc-very-dk-blue);
+}
+
+main {
+  background: var(--cc-dk-blue);
+  width: 337.5px;
+  border-radius: 15px;
+  padding: 20px;
+  color: var(--cc-light-grey);
+  margin-bottom: 20px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main h1 {
+  color: #fff;
+  margin: 15px 0;
+}
+
+.rating-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.btnRating,
+.star-icon {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 3%);
+  border: none;
+  text-align: center;
+  color: var(--cc-light-grey);
+  font-weight: var(--fw-bold);
+}
+
+.btnRating,
+.btnSubmit {
+  transition: all 0.3s ease;
+}
+
+.btnRating:hover {
+  cursor: pointer;
+  background: var(--cc-primary);
+  color: #fff;
+}
+
+.active {
+  background: var(--cc-med-grey);
+  color: var(--cc-dk-blue);
+}
+
+.star-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSubmit {
+  border-radius: 50vw;
+  width: 90%;
+  align-self: center;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: var(--cc-primary);
+  color: #fff;
+  margin: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btnSubmit:hover {
+  background: #fff;
+  color: var(--cc-primary);
+}
+
+.thank-you-state {
+  text-align: center;
+}
+
+.user-rating {
+  background: rgba(255, 255, 255, 3%);
+  padding: 10px;
+  border-radius: 50vw;
+  margin-top: 5px;
+  color: var(--cc-primary);
+  font-size: 15px;
+}
+
+.thank-you-content p {
+  padding-bottom: 15px;
+}
